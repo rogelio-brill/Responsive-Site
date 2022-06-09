@@ -1,29 +1,99 @@
 /*Desktop View*/
 body {
-    margin: 0;
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .container {
-    background-color: blueviolet;
     min-height: 500px;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: rgb(52, 51, 51);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    background-color: rgb(52, 51, 51);
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+
+footer {
+    max-width: 1024px;
+    background-color: blueviolet;
+    min-height: 100px;
+    margin: 0 auto;
 }
 
 .col {
-    background-color: rgb(255, 57, 57);
-    min-height: 200px;
     width: 30%;
     margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
 }
+
+.col p {
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+
 
 /*Tablet View*/
 @media (max-width: 768px) {
     .col {
         width: 45%;
+    }
+    .hide-desktop {
+        display: block;
     }
 }
 
@@ -31,5 +101,8 @@ body {
 @media (max-width: 400px) {
     .col {
         width: 100%;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
