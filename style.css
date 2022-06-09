@@ -1,16 +1,35 @@
 /*Desktop View*/
-h1 {
-    color:aquamarine;
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: blueviolet;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: rgb(255, 57, 57);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
 }
 
 /*Tablet View*/
 @media (max-width: 768px) {
-    h1{color: orange;}
+    .col {
+        width: 45%;
+    }
 }
 
-/*Mobile View*/
-@media (max-width: 500px) {
-    h1{color: black;
-    font-family: 'Courier New', Courier, monospace;
+/*Mobile View */
+@media (max-width: 400px) {
+    .col {
+        width: 100%;
     }
 }
