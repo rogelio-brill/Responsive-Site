@@ -85,6 +85,10 @@ footer {
     font-weight: 700;
 }
 
+.mob-wrapper {
+    display: none;
+}
+
 
 
 /*Tablet View*/
@@ -94,6 +98,49 @@ footer {
     }
     .hide-desktop {
         display: block;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0px; 
+    }
+
+    .mybutton {
+        margin-left: 0;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
     }
 }
 
@@ -105,4 +152,5 @@ footer {
     .hide-mobile {
         display: none;
     }
+
 }
